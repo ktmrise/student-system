@@ -6,4 +6,5 @@ import com.ktm.model.User;
 
 public interface UserMapper extends BaseMapper<User> {
 
+    User findByName(String name);
 }

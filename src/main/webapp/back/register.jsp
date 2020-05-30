@@ -48,8 +48,6 @@
                         <img src="${pageContext.request.contextPath}/user/getImage" id="image" alt=""
                              style="float: right;height: 38px">
                     </div>
-
-
                 </div>
 
 

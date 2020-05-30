@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>用户登录</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="${pageContext.request.contextPath}/back/statics/js/jquery-3.5.1.js"></script>
 </head>
 
 <body>
@@ -32,13 +33,14 @@
                     <input type="password" class="form-control" id="password" placeholder="Password">
                 </div>
                 <div class="form-group">
-                    <label for="code" >验证码:</label>
+                    <label for="code">验证码:</label>
                     <div>
-                        <input type="password" style="width: 77%;height: 38px;float:left" class="form-control" id="code" placeholder="Code">
-                        <img src="${pageContext.request.contextPath}/user/getImage" alt="" style="float: right;height: 38px">
+                        <input type="password" style="width: 77%;height: 38px;float:left" name="code"
+                               class="form-control" id="code"
+                               placeholder="Code">
+                        <img src="${pageContext.request.contextPath}/user/getImage" id="image" alt=""
+                             style="float: right;height: 38px">
                     </div>
-
-
                 </div>
 
 
@@ -57,4 +59,15 @@
 
 
 </body>
+
+<script>
+
+    $(function () {
+        $("#image").click(function () {
+            $(this).attr("src", "${pageContext.request.contextPath}/user/getImage?id=" + Math.random());
+        });
+
+    });
+
+</script>
 </html>

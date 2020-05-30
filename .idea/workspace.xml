@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b542f9b-7f2c-4088-9af0-a68eae94fa60" name="Default Changelist" comment="" />
+    <list default="true" id="6b542f9b-7f2c-4088-9af0-a68eae94fa60" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ktm/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ktm/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ktm/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ktm/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ktm/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ktm/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ktm/result/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ktm/result/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ktm/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ktm/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ktm/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ktm/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/back/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/back/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/back/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/back/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ktm/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ktm/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ktm/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ktm/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ktm/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ktm/service/impl/UserServiceImpl.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +26,12 @@
         <option value="JavaScript File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Mybatis Mapper" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -34,11 +51,15 @@
     <option name="jreName" value="14" />
   </component>
   <component name="ProjectId" id="1cYsM6Ml6wQQyzEGeT4tdsJvQ3v" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
@@ -49,7 +70,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/back" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/mapper" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -117,6 +138,7 @@
       <workItem from="1590740726996" duration="10000" />
       <workItem from="1590741737177" duration="120000" />
       <workItem from="1590747380465" duration="8972000" />
+      <workItem from="1590840642551" duration="4068000" />
     </task>
     <servers />
   </component>
@@ -140,42 +162,46 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1590752040069" />
-    <state x="548" y="167" key="FileChooserDialogImpl" timestamp="1590741846132">
+    <state x="449" y="167" key="DUMP_DIALOG_DIMENSION_KEY" timestamp="1590841089213">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="548" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1590741846132" />
-    <state width="1493" height="339" key="GridCell.Tab.0.bottom" timestamp="1590756364929">
+    <state x="449" y="167" key="DUMP_DIALOG_DIMENSION_KEY/0.0.1536.824@0.0.1536.824" timestamp="1590841089213" />
+    <state x="548" y="167" key="FileChooserDialogImpl" timestamp="1590842585597">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="339" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590756364929" />
-    <state width="1493" height="339" key="GridCell.Tab.0.center" timestamp="1590756364929">
+    <state x="548" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1590842585597" />
+    <state width="1493" height="339" key="GridCell.Tab.0.bottom" timestamp="1590842929021">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="339" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1590756364929" />
-    <state width="1493" height="339" key="GridCell.Tab.0.left" timestamp="1590756364928">
+    <state width="1493" height="339" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590842929021" />
+    <state width="1493" height="339" key="GridCell.Tab.0.center" timestamp="1590842929021">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="339" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1590756364928" />
-    <state width="1493" height="339" key="GridCell.Tab.0.right" timestamp="1590756364929">
+    <state width="1493" height="339" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1590842929021" />
+    <state width="1493" height="339" key="GridCell.Tab.0.left" timestamp="1590842929021">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="339" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1590756364929" />
-    <state width="1493" height="339" key="GridCell.Tab.1.bottom" timestamp="1590756364929">
+    <state width="1493" height="339" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1590842929021" />
+    <state width="1493" height="339" key="GridCell.Tab.0.right" timestamp="1590842929021">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="339" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590756364929" />
-    <state width="1493" height="339" key="GridCell.Tab.1.center" timestamp="1590756364929">
+    <state width="1493" height="339" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1590842929021" />
+    <state width="1493" height="339" key="GridCell.Tab.1.bottom" timestamp="1590842929022">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="339" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1590756364929" />
-    <state width="1493" height="339" key="GridCell.Tab.1.left" timestamp="1590756364929">
+    <state width="1493" height="339" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590842929022" />
+    <state width="1493" height="339" key="GridCell.Tab.1.center" timestamp="1590842929022">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="339" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1590756364929" />
-    <state width="1493" height="339" key="GridCell.Tab.1.right" timestamp="1590756364929">
+    <state width="1493" height="339" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1590842929022" />
+    <state width="1493" height="339" key="GridCell.Tab.1.left" timestamp="1590842929021">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="339" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1590756364929" />
+    <state width="1493" height="339" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1590842929021" />
+    <state width="1493" height="339" key="GridCell.Tab.1.right" timestamp="1590842929022">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="339" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1590842929022" />
     <state x="270" y="0" width="1213" height="710" key="SettingsEditor" timestamp="1590741820996">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

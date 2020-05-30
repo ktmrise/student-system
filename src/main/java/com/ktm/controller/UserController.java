@@ -5,6 +5,7 @@ import com.ktm.model.User;
 import com.ktm.result.Result;
 import com.ktm.service.UserService;
 import com.ktm.utils.VerifyCodeUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
@@ -28,8 +29,30 @@ public class UserController {
 
         session.setAttribute("code", code);
 
-        VerifyCodeUtils.outputImage(220,60,response.getOutputStream(),code);
+        VerifyCodeUtils.outputImage(220, 60, response.getOutputStream(), code);
 
+    }
+
+    @GetMapping("/login")
+    @ResponseBody
+    public Result login(User user, @RequestParam("code") String code, HttpSession session) {
+
+        Result result = new Result();
+
+        String imageCode = (String) session.getAttribute("code");
+
+        try {
+            if (StringUtils.equals(imageCode, code)) {
+                User dbUser = userService.login(user);
+                session.setAttribute("user", dbUser);
+                return result.setMessage("登录成功").setStatus(true);
+            }
+            throw new RuntimeException("验证码错误");
+        } catch (RuntimeException e) {
+            e.printStackTrace();
+            result.setStatus(false).setMessage("登录失败" + e.getMessage());
+        }
+        return result;
     }
 
 
