@@ -42,7 +42,7 @@ public class UserController {
         String imageCode = (String) session.getAttribute("code");
 
         try {
-            if (StringUtils.equals(imageCode, code)) {
+            if (StringUtils.equalsIgnoreCase(imageCode, code)) {
                 User dbUser = userService.login(user);
                 session.setAttribute("user", dbUser);
                 return result.setMessage("登录成功").setStatus(true);
@@ -50,7 +50,7 @@ public class UserController {
             throw new RuntimeException("验证码错误");
         } catch (RuntimeException e) {
             e.printStackTrace();
-            result.setStatus(false).setMessage("登录失败" + e.getMessage());
+            result.setStatus(false).setMessage("登录失败:" + e.getMessage());
         }
         return result;
     }
@@ -62,7 +62,7 @@ public class UserController {
         Result result = new Result();
         try {
             String imageCode = (String) session.getAttribute("code");
-            if (imageCode.equals(code)) {
+            if (StringUtils.equalsIgnoreCase(imageCode, code)) {
                 userService.register(user);
                 result.setMessage("success");
                 result.setStatus(true);
@@ -78,6 +78,12 @@ public class UserController {
 
         }
         return result;
+    }
+
+    @RequestMapping("/logout")
+    public String logout(HttpSession session) {
+        session.invalidate();
+        return "redirect:/back/login.jsp";
     }
 
 

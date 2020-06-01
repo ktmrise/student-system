@@ -54,7 +54,7 @@
                 <button type="button" id="reg" class="btn btn-success" style="margin-left: 294px;margin-top: 10px">
                     立即注册
                 </button>
-                <button type="submit" class="btn btn-primary" style="margin-top: 10px">返回登录</button>
+                <a  href="${pageContext.request.contextPath}/back/login.jsp" class="btn btn-primary" style="margin-top: 10px">返回登录</a>
 
             </form>
         </div>

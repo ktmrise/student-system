@@ -2,6 +2,7 @@
   <dictionary name="KTM">
     <words>
       <w>jsdelivr</w>
+      <w>noresize</w>
     </words>
   </dictionary>
 </component>

@@ -39,9 +39,13 @@ public class UserServiceImpl implements UserService {
         if (dbUser != null) {
             if (StringUtils.equals(user.getPassword(), dbUser.getPassword())) {
                 return dbUser;
+            } else {
+                throw new RuntimeException("密码错误");
             }
+        } else {
+            throw new RuntimeException("用户名不存在");
+
         }
-        throw new RuntimeException("用户名不存在");
 
     }
 }

@@ -23,7 +23,7 @@
 
     <div class="row">
         <div class="col-lg-6 col-lg-offset-3">
-            <form>
+            <form id="inputForm">
                 <div class="form-group">
                     <label for="name">用户名:</label>
                     <input type="text" class="form-control" id="name" placeholder="Username">
@@ -44,8 +44,10 @@
                 </div>
 
 
-                    <button type="submit" class="btn btn-success" style="margin-left: 294px;margin-top: 10px" >登录</button>
-                    <button type="submit" class="btn btn-primary" style="margin-top: 10px">注册</button>
+                <button type="button" class="btn  btn-success" id="loginBtn"
+                        style="margin-left: 294px;margin-top: 10px">登录
+                </button>
+                <a class="btn btn-primary" href="${pageContext.request.contextPath}/back/register.jsp" style="margin-top: 10px">注册</a>
 
             </form>
         </div>
@@ -54,19 +56,32 @@
 </div>
 
 
-
-
-
-
 </body>
 
 <script>
 
     $(function () {
+        //更换验证码
         $("#image").click(function () {
             $(this).attr("src", "${pageContext.request.contextPath}/user/getImage?id=" + Math.random());
         });
 
+
+        //绑定登录按钮的单击事件
+        $("#loginBtn").click(function () {
+            let name = $("#name").val();
+            let password = $("#password").val();
+            let code = $("#code").val();
+            $.get("${pageContext.request.contextPath}/user/login?name="+name+'&password='+password+'&code='+code,function (response) {
+                if (response.status) {
+                    location.href = '${pageContext.request.contextPath}/back/index.jsp';
+                } else {
+                    alert(response.message);
+                }
+
+            });
+
+        });
     });
 
 </script>
