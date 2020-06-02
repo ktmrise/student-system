@@ -11,13 +11,13 @@ import java.util.Date;
 
 @Data
 @Accessors(chain = true)
-@TableName("t_city")
-public class City {
-
+@TableName("t_tag")
+public class Tag {
 
     @TableId(value = "id",type = IdType.AUTO)
     private Integer id;
     private String name;
+    private String type;
     private Date createTime;
-    private Integer numbers;
+
 }

@@ -43,9 +43,37 @@
                 </c:forEach>
 
             </table>
-            <a href="" class="btn btn-success btn-sm pull-right">录入就业城市</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <form class="form-inline" id="addForm" action="${pageContext.request.contextPath}/city/add" method="post">
+                <div class="form-group">
+                    <label for="cityName">城市名称</label>
+                    <input type="text" class="form-control" id="cityName" name="name" placeholder="请输入城市名称">
+                </div>
+                <button type="submit" class="btn btn-success" id="cityAdd">添加城市信息</button>
+            </form>
         </div>
     </div>
 </div>
 </body>
+
+
+<script>
+    $(function () {
+        $("#addForm").submit(function () {
+            if (!$("#cityName").val()) {
+                alert('城市名不能为空');
+                return false;
+            }
+
+        });
+
+    });
+</script>
+
+
+
+
 </html>

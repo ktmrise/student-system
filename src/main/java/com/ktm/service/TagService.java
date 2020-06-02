@@ -1,0 +1,10 @@
+package com.ktm.service;
+
+import com.ktm.model.Tag;
+
+import java.util.List;
+
+public interface TagService {
+
+    List<Tag> findAll();
+}

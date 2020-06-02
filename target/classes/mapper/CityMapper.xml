@@ -6,4 +6,8 @@
         select * from t_city;
 
     </select>
+    <select id="findByName" resultType="com.ktm.model.City" parameterType="java.lang.String">
+        select * from t_city where name=#{name};
+
+    </select>
 </mapper>

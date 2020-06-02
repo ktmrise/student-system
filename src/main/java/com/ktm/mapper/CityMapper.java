@@ -9,4 +9,6 @@ public interface CityMapper extends BaseMapper<City> {
 
 
     List<City> findAll();
+
+    City findByName(String name);
 }
