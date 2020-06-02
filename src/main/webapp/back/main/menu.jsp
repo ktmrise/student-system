@@ -8,7 +8,7 @@
     <li class="list-group-item text-center"><a href="${pageContext.request.contextPath}/back/student/index.jsp" target="content">学生管理</a></li>
     <li class="list-group-item text-center"><a href="${pageContext.request.contextPath}/back/group/index.jsp" target="content">小组管理</a></li>
     <li class="list-group-item text-center"><a href="${pageContext.request.contextPath}/back/tag/index.jsp" target="content">标签管理</a></li>
-    <li class="list-group-item text-center"><a href="${pageContext.request.contextPath}/back/city/index.jsp" target="content">城市管理</a></li>
+    <li class="list-group-item text-center"><a href="${pageContext.request.contextPath}/city/findAll" target="content">城市管理</a></li>
 
 </ul>
 
