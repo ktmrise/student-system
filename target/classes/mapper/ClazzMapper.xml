@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ktm.mapper.ClazzMapper">
+
+
+    <resultMap id="ClazzMap" type="com.ktm.model.Clazz">
+
+
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="tagid" property="tagId"/>
+
+        <association property="tag" javaType="com.ktm.model.Tag">
+            <id column="tid" property="id"/>
+            <result column="tname" property="name"/>
+            <result column="type" property="type"/>
+            <result column="createTime" property="createTime"/>
+        </association>
+    </resultMap>
+
+    <select id="findAll" resultMap="ClazzMap">
+        SELECT
+	    c.*, t.id tid,
+        t.NAME tname,
+        t.createtime,
+        t.type
+        FROM
+        t_clazz c
+        LEFT JOIN t_tag t ON c.tagid = t.id
+
+    </select>
+</mapper>

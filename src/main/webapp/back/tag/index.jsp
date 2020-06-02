@@ -43,7 +43,46 @@
                     </tr>
                 </c:forEach>
             </table>
+
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <form class="form-inline" method="post" action="${pageContext.request.contextPath}/tag/insert"
+                  id="inputForm">
+                <div class="form-group">
+                    <label for="tagName">标签名</label>
+                    <input type="text" class="form-control" id="tagName" name="name" placeholder="输入标签名">
+                </div>
+                <div class="form-group">
+                    <label for="tagType">标签类型</label>
+                    <select name="type" id="tagType" class="form-control">
+                        <option value="班级">班级标签</option>
+                        <option value="学生">学生标签</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-success">添加标签</button>
+            </form>
         </div>
     </div>
 </div>
+
+<script>
+    $(function () {
+        $("#inputForm").submit(function () {
+            if (!$("#tagName").val()) {
+                alert('标签名不能为空');
+                return false;
+            } else {
+                return true;
+            }
+
+        });
+
+
+    });
+</script>
 </body>

@@ -1,22 +1,23 @@
 package com.ktm;
 
-import com.ktm.model.City;
-import com.ktm.service.CityService;
+import com.ktm.mapper.ClazzMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import javax.annotation.Resource;
-import java.util.List;
+
 
 @SpringBootTest
 class StudentSystemApplicationTests {
 
+
+
     @Resource
-    private CityService cityService;
+    private ClazzMapper clazzMapper;
 
     @Test
     void contextLoads() {
-        cityService.findAll().forEach(city -> System.out.println("city"+city));
+        System.out.println(clazzMapper.findAll());
     }
 
 }

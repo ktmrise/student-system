@@ -8,6 +8,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
+import java.util.Date;
 import java.util.List;
 
 
@@ -25,5 +26,11 @@ public class TagServiceImpl implements TagService {
     public List<Tag> findAll() {
 
         return tagMapper.findAll();
+    }
+
+    @Override
+    public void insert(Tag tag) {
+        tag.setCreateTime(new Date());
+        tagMapper.insert(tag);
     }
 }
