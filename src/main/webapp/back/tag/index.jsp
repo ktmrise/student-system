@@ -67,6 +67,29 @@
                 <button type="submit" class="btn btn-success">添加标签</button>
             </form>
         </div>
+        <div class="col-lg-12">
+            <nav aria-label="Page navigation">
+                <ul class="pagination">
+                    <li>
+                        <c:if test="${requestScope.currentPage!=1}">
+                            <a href="/tag/findByPage?page=${requestScope.currentPage-1}" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </c:if>
+                    </li>
+                    <c:forEach begin="1" end="${requestScope.totalPage}" var="i">
+                        <li><a href="/tag/findByPage?page=${i}">${i}</a></li>
+                    </c:forEach>
+                    <li>
+                        <c:if test="${requestScope.currentPage!=requestScope.totalPage}">
+                            <a href="/tag/findByPage?page=${requestScope.currentPage+1}" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </c:if>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </div>
 </div>
 

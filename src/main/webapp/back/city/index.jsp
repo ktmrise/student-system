@@ -36,24 +36,49 @@
                         <td><fmt:formatDate value="${city.createTime}"/></td>
                         <td>${city.numbers}</td>
                         <td>
-                            <a href="${pageContext.request.contextPath}/city/delete?id=${city.id}" class="btn btn-danger btn-sm">删除</a>
-                            <a href="${pageContext.request.contextPath}/city/show?id=${city.id}" class="btn btn-primary btn-sm">修改</a>
+                            <a href="${pageContext.request.contextPath}/city/delete?id=${city.id}"
+                               class="btn btn-danger btn-sm">删除</a>
+                            <a href="${pageContext.request.contextPath}/city/show?id=${city.id}"
+                               class="btn btn-primary btn-sm">修改</a>
                         </td>
                     </tr>
                 </c:forEach>
-
             </table>
         </div>
     </div>
     <div class="row">
         <div class="col-lg-12">
-            <form class="form-inline" id="addForm" action="${pageContext.request.contextPath}/city/add" method="post">
+            <form class="form-inline pull-right" id="addForm" action="${pageContext.request.contextPath}/city/add"
+                  method="post">
                 <div class="form-group">
                     <label for="cityName">城市名称</label>
                     <input type="text" class="form-control" id="cityName" name="name" placeholder="请输入城市名称">
                 </div>
                 <button type="submit" class="btn btn-success" id="cityAdd">添加城市信息</button>
             </form>
+        </div>
+        <div class="col-lg-12">
+            <nav aria-label="Page navigation">
+                <ul class="pagination">
+                    <li>
+                        <c:if test="${requestScope.currentPage!=1}">
+                            <a href="/city/findAll?page=${requestScope.currentPage-1}" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </c:if>
+                    </li>
+                    <c:forEach begin="1" end="${requestScope.totalPage}" var="i">
+                        <li><a href="/city/findAll?page=${i}">${i}</a></li>
+                    </c:forEach>
+                    <li>
+                        <c:if test="${requestScope.currentPage!=requestScope.totalPage}">
+                            <a href="/city/findAll?page=${requestScope.currentPage+1}" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </c:if>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -72,8 +97,6 @@
 
     });
 </script>
-
-
 
 
 </html>

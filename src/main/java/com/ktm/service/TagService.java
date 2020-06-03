@@ -11,4 +11,6 @@ public interface TagService {
     void insert(Tag tag);
 
     List<Tag> findByType(String type);
+
+    List<Tag> findByPage(Integer page);
 }

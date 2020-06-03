@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ktm.mapper.GroupMapper">
+
+
+    <resultMap id="GroupMap" type="com.ktm.model.Group">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="clazzid" property="clazzId"/>
+        <result column="tname" property="clazzName"/>
+    </resultMap>
+
+
+    <select id="findAll" resultMap="GroupMap">
+            select c.*,t.name tname
+            from t_group c
+            left join t_clazz t
+            on c.clazzid = t.id;
+    </select>
+</mapper>

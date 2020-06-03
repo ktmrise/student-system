@@ -38,4 +38,10 @@ public class TagServiceImpl implements TagService {
     public List<Tag> findByType(String type) {
        return tagMapper.findByType(type);
     }
+
+    @Override
+    public List<Tag> findByPage(Integer page) {
+        Integer offset = (page - 1) * 2;
+        return tagMapper.findByPage(offset);
+    }
 }
