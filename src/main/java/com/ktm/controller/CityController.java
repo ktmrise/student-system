@@ -10,6 +10,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.Date;
 import java.util.List;
 
 @Controller
@@ -17,14 +18,15 @@ import java.util.List;
 public class CityController {
 
 
-
     @Resource
     private CityService cityService;
 
+    @Resource
+    private CityMapper cityMapper;
 
 
     @GetMapping("/findAll")
-    public String findAll( Model model) {
+    public String findAll(Model model) {
         List<City> cities = cityService.findAll();
         model.addAttribute("cities", cities);
         return "back/city/index";
@@ -38,5 +40,24 @@ public class CityController {
     }
 
 
+    @GetMapping("/delete")
+    public String cityDelete(Integer id) {
+        cityMapper.deleteById(id);
+        return "redirect:/city/findAll";
+    }
 
+
+    @GetMapping("/show")
+    public String cityShow(Integer id, Model model) {
+        City city = cityMapper.selectById(id);
+        model.addAttribute("city", city);
+        return "back/update";
+    }
+
+    @PostMapping("/update")
+    public String cityUpdate(City city) {
+        System.out.println(city);
+        cityMapper.updateById(city);
+        return "redirect:/city/findAll";
+    }
 }

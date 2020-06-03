@@ -36,8 +36,8 @@
                         <td><fmt:formatDate value="${city.createTime}"/></td>
                         <td>${city.numbers}</td>
                         <td>
-                            <a href="" class="btn btn-danger btn-sm">删除</a>
-                            <a href="" class="btn btn-primary btn-sm">修改</a>
+                            <a href="${pageContext.request.contextPath}/city/delete?id=${city.id}" class="btn btn-danger btn-sm">删除</a>
+                            <a href="${pageContext.request.contextPath}/city/show?id=${city.id}" class="btn btn-primary btn-sm">修改</a>
                         </td>
                     </tr>
                 </c:forEach>
