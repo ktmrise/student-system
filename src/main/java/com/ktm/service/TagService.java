@@ -9,4 +9,6 @@ public interface TagService {
     List<Tag> findAll();
 
     void insert(Tag tag);
+
+    List<Tag> findByType(String type);
 }

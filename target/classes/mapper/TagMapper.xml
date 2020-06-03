@@ -7,4 +7,8 @@
         select * from t_tag;
 
     </select>
+    <select id="findByType" resultType="com.ktm.model.Tag" parameterType="java.lang.String">
+        select * from t_tag where type=#{type};
+
+    </select>
 </mapper>

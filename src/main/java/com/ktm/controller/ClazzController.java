@@ -6,6 +6,7 @@ import com.ktm.service.ClazzService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.annotation.Resource;
@@ -25,5 +26,13 @@ public class ClazzController {
         List<Clazz> clazzes = clazzService.findAll();
         model.addAttribute("clazzes", clazzes);
         return "back/clazz/index";
+    }
+
+
+    @PostMapping("/insert")
+    public String insert(Clazz clazz) {
+        System.out.println(clazz);
+        clazzService.insert(clazz);
+        return "redirect:/clazz/findAll";
     }
 }

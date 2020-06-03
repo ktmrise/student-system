@@ -1,6 +1,7 @@
 package com.ktm;
 
 import com.ktm.mapper.ClazzMapper;
+import com.ktm.mapper.TagMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -15,9 +16,12 @@ class StudentSystemApplicationTests {
     @Resource
     private ClazzMapper clazzMapper;
 
+    @Resource
+    private TagMapper tagMapper;
+
     @Test
     void contextLoads() {
-        System.out.println(clazzMapper.findAll());
+        System.out.println(tagMapper.findByType("班级"));
     }
 
 }

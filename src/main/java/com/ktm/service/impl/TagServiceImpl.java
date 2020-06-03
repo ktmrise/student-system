@@ -33,4 +33,9 @@ public class TagServiceImpl implements TagService {
         tag.setCreateTime(new Date());
         tagMapper.insert(tag);
     }
+
+    @Override
+    public List<Tag> findByType(String type) {
+       return tagMapper.findByType(type);
+    }
 }

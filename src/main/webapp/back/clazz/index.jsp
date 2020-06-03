@@ -43,6 +43,42 @@
             </table>
         </div>
     </div>
+
+
+    <div class="row">
+        <form class="form-inline" id="inputForm" action="/clazz/insert" method="post">
+            <div class="form-group">
+                <label for="name">名称:</label>
+                <input type="text" class="form-control" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="tagId">选择对应标签</label>
+                <select name="tagId" id="tagId" class="form-control">
+                </select>
+            </div>
+            <button type="submit" class="btn btn-success">添加班级</button>
+        </form>
+    </div>
 </div>
 </body>
+
+<script>
+    $(function () {
+        $.get("${pageContext.request.contextPath}/tag/findByType",{type:"班级"}, function (response) {
+            $.each(response, function (i, tag) {
+                let option = $("<option/>").text(tag.name).val(tag.id);
+                $("#tagId").append(option);
+
+            });
+        });
+
+        $("#inputForm").submit(function () {
+            if (!$("#name").val()) {
+                alert('班级名不能为空')
+                return false;
+            }
+        });
+
+    });
+</script>
 </html>

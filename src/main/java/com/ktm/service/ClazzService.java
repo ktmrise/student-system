@@ -10,4 +10,5 @@ public interface ClazzService {
     List<Clazz> findAll();
 
 
+    void insert(Clazz clazz);
 }

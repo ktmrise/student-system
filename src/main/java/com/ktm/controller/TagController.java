@@ -8,6 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -32,5 +33,14 @@ public class TagController {
     public String insert(Tag tag) {
         tagService.insert(tag);
         return "redirect:/tag/findAll";
+    }
+
+
+    @GetMapping("/findByType")
+    @ResponseBody
+    public List<Tag> findByType(Model model, String type) {
+        System.out.println(type);
+        return tagService.findByType(type);
+
     }
 }
