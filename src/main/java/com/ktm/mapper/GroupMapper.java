@@ -8,4 +8,7 @@ import java.util.List;
 public interface GroupMapper extends BaseMapper<Group> {
 
     List<Group> findAll();
+
+    String findNameById(Integer id);
+
 }

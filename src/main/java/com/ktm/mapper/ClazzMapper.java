@@ -11,4 +11,7 @@ public interface ClazzMapper extends BaseMapper<Clazz> {
     List<Clazz> findAll();
 
 
+    String findNameById(Integer id);
+
+
 }

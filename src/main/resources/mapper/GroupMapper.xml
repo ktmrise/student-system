@@ -17,4 +17,7 @@
             left join t_clazz t
             on c.clazzid = t.id;
     </select>
+    <select id="findNameById" resultType="java.lang.String" parameterType="java.lang.Integer">
+        select name from t_group where id=#{id};
+    </select>
 </mapper>

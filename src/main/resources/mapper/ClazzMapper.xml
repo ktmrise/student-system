@@ -29,4 +29,8 @@
         LEFT JOIN t_tag t ON c.tagid = t.id
 
     </select>
+    <select id="findNameById" resultType="java.lang.String" parameterType="java.lang.Integer">
+        select name from t_clazz where  id=#{id};
+
+    </select>
 </mapper>
