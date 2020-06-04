@@ -43,5 +43,50 @@
             </table>
         </div>
     </div>
+    <div class="row">
+        <form class="form-inline" id="inputForm" action="/group/insert" method="post">
+            <div class="form-group">
+                <label for="name">名称:</label>
+                <input type="text" class="form-control" id="name" name="name">
+            </div><div class="form-group">
+                <label for="content">标语:</label>
+                <input type="text" class="form-control" id="content" name="content">
+            </div>
+
+            <div class="form-group">
+                <label for="clazzId">选择班级:  </label>
+                <select name="clazzId" id="clazzId" class="form-control">
+                </select>
+            </div>
+            <button type="submit" class="btn btn-success">添加小组</button>
+        </form>
+    </div>
 </div>
+
+
+<script>
+    $(function () {
+        $.get("/clazz/findAllClazzJSON", function (response) {
+            // console.log(response);
+                $.each(response,function (index,clazz) {
+                    var option = $("<option/>").text(clazz.name).val(clazz.id);
+                    $("#clazzId").append(option);
+                })
+        });
+
+
+        $("#inputForm").submit(function () {
+            if (!$("#name").val() ) {
+                alert('名称不能为空');
+                return false;
+            }
+
+            if (!$("#content").val()) {
+                alert('标语不能为空');
+                return false;
+            }
+
+        });
+    });
+</script>
 </body>

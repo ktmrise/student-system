@@ -8,6 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -34,5 +35,13 @@ public class ClazzController {
         System.out.println(clazz);
         clazzService.insert(clazz);
         return "redirect:/clazz/findAll";
+    }
+
+
+    @GetMapping("/findAllClazzJSON")
+    @ResponseBody
+    public List<Clazz> findAllClazzJSON() {
+        return clazzService.findAll();
+
     }
 }
