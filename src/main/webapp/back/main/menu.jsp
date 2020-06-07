@@ -4,7 +4,7 @@
 
 
 <ul class="list-group" style="margin-top: 30px">
-    <li class="list-group-item text-center"><a href="${pageContext.request.contextPath}/student/findAll" target="content">学生管理</a></li>
+    <li class="list-group-item text-center"><a href="${pageContext.request.contextPath}/student/findAllStudent" target="content">学生管理</a></li>
     <li class="list-group-item text-center"><a href="${pageContext.request.contextPath}/group/findAll" target="content">小组管理</a></li>
     <li class="list-group-item text-center"><a href="${pageContext.request.contextPath}/clazz/findAll" target="content">班级管理</a></li>
     <li class="list-group-item text-center"><a href="${pageContext.request.contextPath}/tag/findByPage" target="content">标签管理</a></li>

@@ -1,10 +1,7 @@
 package com.ktm;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.ktm.mapper.CityMapper;
-import com.ktm.mapper.ClazzMapper;
-import com.ktm.mapper.GroupMapper;
-import com.ktm.mapper.TagMapper;
+import com.ktm.mapper.*;
 import com.ktm.model.City;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -29,6 +26,9 @@ class StudentSystemApplicationTests {
     @Resource
     private CityMapper cityMapper;
 
+    @Resource
+    private StudentMapper studentMapper;
+
     @Test
     void contextLoads() {
         System.out.println(tagMapper.findByType("班级"));
@@ -45,6 +45,21 @@ class StudentSystemApplicationTests {
         System.out.println(cityPage.getSize());
 
 
+    }
+
+
+    @Test
+    void testStudentFindALL() {
+        studentMapper.findAll().forEach(studentDTO01 -> {
+            System.out.println(studentDTO01);
+        });
+    }
+
+
+    @Test
+    void testFindByPage() {
+
+        System.out.println(studentMapper.findByPage(null, null, 0));
     }
 
 }

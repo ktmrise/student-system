@@ -20,17 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b542f9b-7f2c-4088-9af0-a68eae94fa60" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ktm/mapper/ClazzMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ktm/mapper/ClazzMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ktm/mapper/GroupMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ktm/mapper/GroupMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ClazzMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ClazzMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/GroupMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/GroupMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ktm/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ktm/controller/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ktm/mapper/StudentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ktm/mapper/StudentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ktm/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ktm/model/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ktm/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ktm/service/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ktm/service/impl/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ktm/service/impl/StudentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/StudentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/StudentMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/back/main/menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/back/main/menu.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/back/student/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/back/student/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ktm/mapper/ClazzMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ktm/mapper/ClazzMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ktm/mapper/GroupMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ktm/mapper/GroupMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ktm/StudentSystemApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ktm/StudentSystemApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ktm/controller/StudentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ktm/controller/StudentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ktm/mapper/StudentMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ktm/mapper/StudentMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ktm/model/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ktm/model/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ktm/service/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ktm/service/StudentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ktm/service/impl/StudentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ktm/service/impl/StudentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/StudentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/StudentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ktm/StudentSystemApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ktm/StudentSystemApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +92,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../githubprojects/kblog" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -95,8 +100,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\IdeaProjects\springboot-projects\student-system\src\main\webapp\back\main" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ktm.service.impl" />
+      <recent name="com.ktm.model.DTO" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\IdeaProjects\springboot-projects\student-system\src\main\resources\mapper" />
@@ -105,9 +111,8 @@
       <recent name="D:\IdeaProjects\springboot-projects\student-system\src\main\webapp\back\student" />
       <recent name="D:\IdeaProjects\springboot-projects\student-system\src\main\webapp\back\main" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.ktm.service.impl" />
-      <recent name="com.ktm.model.DTO" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\springboot-projects\student-system\src\main\webapp\back\main" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.StudentSystemApplication">
@@ -122,6 +127,22 @@
       <option name="PACKAGE_NAME" value="com.ktm" />
       <option name="MAIN_CLASS_NAME" value="com.ktm.StudentSystemApplicationTests" />
       <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentSystemApplicationTests.testFindByPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="student-system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ktm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ktm" />
+      <option name="MAIN_CLASS_NAME" value="com.ktm.StudentSystemApplicationTests" />
+      <option name="METHOD_NAME" value="testFindByPage" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -143,6 +164,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StudentSystemApplicationTests.testStudentFindALL" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="student-system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ktm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ktm" />
+      <option name="MAIN_CLASS_NAME" value="com.ktm.StudentSystemApplicationTests" />
+      <option name="METHOD_NAME" value="testStudentFindALL" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StudentSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="student-system" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ktm.StudentSystemApplication" />
@@ -157,10 +194,14 @@
     <list>
       <item itemvalue="JUnit.StudentSystemApplicationTests.contextLoads" />
       <item itemvalue="JUnit.StudentSystemApplicationTests.testGroup" />
+      <item itemvalue="JUnit.StudentSystemApplicationTests.testStudentFindALL" />
+      <item itemvalue="JUnit.StudentSystemApplicationTests.testFindByPage" />
       <item itemvalue="Spring Boot.StudentSystemApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StudentSystemApplicationTests.testFindByPage" />
+        <item itemvalue="JUnit.StudentSystemApplicationTests.testStudentFindALL" />
         <item itemvalue="JUnit.StudentSystemApplicationTests.testGroup" />
         <item itemvalue="JUnit.StudentSystemApplicationTests.contextLoads" />
       </list>
@@ -198,7 +239,12 @@
       <workItem from="1591163107718" duration="6159000" />
       <workItem from="1591177455221" duration="6090000" />
       <workItem from="1591184232755" duration="4248000" />
-      <workItem from="1591250765824" duration="11371000" />
+      <workItem from="1591250765824" duration="11534000" />
+      <workItem from="1591342178349" duration="2810000" />
+      <workItem from="1591408907231" duration="13130000" />
+      <workItem from="1591437904331" duration="3343000" />
+      <workItem from="1591505517726" duration="511000" />
+      <workItem from="1591531238826" duration="1636000" />
     </task>
     <servers />
   </component>
@@ -230,10 +276,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="0" width="814" height="824" key="#Intentions/0.0.1536.824@0.0.1536.824" timestamp="1591101290455" />
-    <state x="179" y="254" key="#SQL_Dialects" timestamp="1591100380361">
+    <state x="651" y="274" key="#Notifications" timestamp="1591342654779">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="179" y="254" key="#SQL_Dialects/0.0.1536.824@0.0.1536.824" timestamp="1591100380361" />
+    <state x="651" y="274" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1591342654779" />
+    <state x="179" y="254" key="#SQL_Dialects" timestamp="1591410960702">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="179" y="254" key="#SQL_Dialects/0.0.1536.824@0.0.1536.824" timestamp="1591410960702" />
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590751589048">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -246,10 +296,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="548" y="117" key="#com.intellij.ide.macro.MacrosDialog/0.0.1536.824@0.0.1536.824" timestamp="1590724333439" />
-    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser" timestamp="1591267900038">
+    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser" timestamp="1591423486520">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1591267900038" />
+    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1591423486520" />
     <state x="499" y="188" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1591098687595">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -266,58 +316,58 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="449" y="167" key="DUMP_DIALOG_DIMENSION_KEY/0.0.1536.824@0.0.1536.824" timestamp="1590841089213" />
-    <state x="548" y="167" key="FileChooserDialogImpl" timestamp="1591273563927">
+    <state x="548" y="167" key="FileChooserDialogImpl" timestamp="1591505533696">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="548" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1591273563927" />
-    <state width="1493" height="385" key="GridCell.Tab.0.bottom" timestamp="1591273920219">
+    <state x="548" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1591505533696" />
+    <state width="1493" height="364" key="GridCell.Tab.0.bottom" timestamp="1591532435456">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="385" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591273920219" />
-    <state width="1493" height="385" key="GridCell.Tab.0.center" timestamp="1591273920219">
+    <state width="1493" height="364" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591532435456" />
+    <state width="1493" height="364" key="GridCell.Tab.0.center" timestamp="1591532435456">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="385" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591273920219" />
-    <state width="1493" height="385" key="GridCell.Tab.0.left" timestamp="1591273920219">
+    <state width="1493" height="364" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591532435456" />
+    <state width="1493" height="364" key="GridCell.Tab.0.left" timestamp="1591532435456">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="385" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591273920219" />
-    <state width="1493" height="385" key="GridCell.Tab.0.right" timestamp="1591273920219">
+    <state width="1493" height="364" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591532435456" />
+    <state width="1493" height="364" key="GridCell.Tab.0.right" timestamp="1591532435456">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="385" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591273920219" />
-    <state width="1493" height="385" key="GridCell.Tab.1.bottom" timestamp="1591273920219">
+    <state width="1493" height="364" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591532435456" />
+    <state width="1493" height="364" key="GridCell.Tab.1.bottom" timestamp="1591532435456">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="385" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591273920219" />
-    <state width="1493" height="385" key="GridCell.Tab.1.center" timestamp="1591273920219">
+    <state width="1493" height="364" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591532435456" />
+    <state width="1493" height="364" key="GridCell.Tab.1.center" timestamp="1591532435456">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="385" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1591273920219" />
-    <state width="1493" height="385" key="GridCell.Tab.1.left" timestamp="1591273920219">
+    <state width="1493" height="364" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1591532435456" />
+    <state width="1493" height="364" key="GridCell.Tab.1.left" timestamp="1591532435456">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="385" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1591273920219" />
-    <state width="1493" height="385" key="GridCell.Tab.1.right" timestamp="1591273920219">
+    <state width="1493" height="364" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1591532435456" />
+    <state width="1493" height="364" key="GridCell.Tab.1.right" timestamp="1591532435456">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="385" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1591273920219" />
-    <state width="1493" height="292" key="GridCell.Tab.2.bottom" timestamp="1591270490423">
+    <state width="1493" height="364" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1591532435456" />
+    <state width="1493" height="292" key="GridCell.Tab.2.bottom" timestamp="1591275000463">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="292" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591270490423" />
-    <state width="1493" height="292" key="GridCell.Tab.2.center" timestamp="1591270490423">
+    <state width="1493" height="292" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591275000463" />
+    <state width="1493" height="292" key="GridCell.Tab.2.center" timestamp="1591275000463">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="292" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1591270490423" />
-    <state width="1493" height="292" key="GridCell.Tab.2.left" timestamp="1591270490422">
+    <state width="1493" height="292" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1591275000463" />
+    <state width="1493" height="292" key="GridCell.Tab.2.left" timestamp="1591275000463">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="292" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1591270490422" />
-    <state width="1493" height="292" key="GridCell.Tab.2.right" timestamp="1591270490423">
+    <state width="1493" height="292" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1591275000463" />
+    <state width="1493" height="292" key="GridCell.Tab.2.right" timestamp="1591275000463">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="292" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1591270490423" />
+    <state width="1493" height="292" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1591275000463" />
     <state x="349" y="147" key="IDE.errors.dialog" timestamp="1591062026034">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -326,10 +376,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="0" width="1213" height="710" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1591063611973" />
-    <state width="498" height="498" key="SwitcherDM" timestamp="1591268515634">
+    <state width="498" height="498" key="SwitcherDM" timestamp="1591438478122">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="498" height="498" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1591268515634" />
+    <state width="498" height="498" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1591438478122" />
     <state x="668" y="288" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1590717360097">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -342,20 +392,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="178" y="73" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1591146830267" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1591273727223">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1591440468514">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1591273727223" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ktm/controller/StudentController.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1591440468514" />
   </component>
 </project>
